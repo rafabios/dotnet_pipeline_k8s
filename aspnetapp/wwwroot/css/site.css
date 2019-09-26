@@ -5,6 +5,7 @@ a.navbar-brand {
   white-space: normal;
   text-align: center;
   word-break: break-all;
+  background-color: #ffff66; 
 }
 
 /* Provide sufficient contrast against white background */
@@ -19,7 +20,7 @@ a {
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color:  #cc6699;
+  color: #fff;
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
@@ -68,4 +69,5 @@ body {
   width: 100%;
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
+  background-color: #ff0066;
 }
