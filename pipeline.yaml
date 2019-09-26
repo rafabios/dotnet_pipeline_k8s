@@ -1,0 +1,18 @@
+type: dotnet
+runTests: false
+testCommand: ls
+deployUponTestSuccess: false
+deployToolImage: bash
+deployCommand: dotnet aspnetapp.dll
+deployEnvironment: dev
+#
+JOB_NAME: dotnet_pipeline_k8s
+KUBE_METADATA_TIER: dev
+KUBE_METADATA_RESOURCE_LEVEL: low
+KUBE_DNS_DOMAIN: apps.example.com.br
+KUBE_SECRET_DB_PASSWORD: False
+KUBE_API_PORT: 80
+KUBE_CONTAINER_COMMAND: 'tail'
+KUBE_IMAGE_NAME: NOME_DA_IMAGEM
+KUBE_HEALTHCHECK: True
+KUBE_HEALTHCHECK_PATH: /
