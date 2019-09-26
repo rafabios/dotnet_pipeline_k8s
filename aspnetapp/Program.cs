@@ -18,11 +18,12 @@ namespace aspnetapp
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
+                .UseUrls("http://0.0.0.0:5000/")
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
                 })
-                .UseUrls("http://0.0.0.0:5000")
+                
                 ;
     }
 }
